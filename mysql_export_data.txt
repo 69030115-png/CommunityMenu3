@@ -1,0 +1,161 @@
+-- ingredients (20 rows)
+INSERT INTO ingredients (id, code, name, unit, min_stock, shelf_days) VALUES (1, 'I01', 'ฟักทอง', 'กรัม', 1000.0, 10);
+INSERT INTO ingredients (id, code, name, unit, min_stock, shelf_days) VALUES (2, 'I02', 'ไข่ไก่', 'ฟอง', 30.0, 14);
+INSERT INTO ingredients (id, code, name, unit, min_stock, shelf_days) VALUES (3, 'I03', 'กระเทียม', 'กรัม', 200.0, 30);
+INSERT INTO ingredients (id, code, name, unit, min_stock, shelf_days) VALUES (4, 'I04', 'น้ำมันพืช', 'กรัม', 500.0, 180);
+INSERT INTO ingredients (id, code, name, unit, min_stock, shelf_days) VALUES (5, 'I05', 'ซอสหอยนางรม', 'กรัม', 300.0, 180);
+INSERT INTO ingredients (id, code, name, unit, min_stock, shelf_days) VALUES (6, 'I06', 'ผักบุ้ง', 'กรัม', 500.0, 3);
+INSERT INTO ingredients (id, code, name, unit, min_stock, shelf_days) VALUES (7, 'I07', 'หมูสับ', 'กรัม', 500.0, 3);
+INSERT INTO ingredients (id, code, name, unit, min_stock, shelf_days) VALUES (8, 'I08', 'อกไก่', 'กรัม', 500.0, 3);
+INSERT INTO ingredients (id, code, name, unit, min_stock, shelf_days) VALUES (9, 'I09', 'ข้าวสาร', 'กรัม', 5000.0, 180);
+INSERT INTO ingredients (id, code, name, unit, min_stock, shelf_days) VALUES (10, 'I10', 'ใบกะเพรา', 'กรัม', 100.0, 3);
+INSERT INTO ingredients (id, code, name, unit, min_stock, shelf_days) VALUES (11, 'I11', 'พริกขี้หนู', 'กรัม', 100.0, 7);
+INSERT INTO ingredients (id, code, name, unit, min_stock, shelf_days) VALUES (12, 'I12', 'คะน้า', 'กรัม', 500.0, 4);
+INSERT INTO ingredients (id, code, name, unit, min_stock, shelf_days) VALUES (13, 'I13', 'มะเขือเทศ', 'กรัม', 300.0, 7);
+INSERT INTO ingredients (id, code, name, unit, min_stock, shelf_days) VALUES (14, 'I14', 'หอมหัวใหญ่', 'กรัม', 300.0, 20);
+INSERT INTO ingredients (id, code, name, unit, min_stock, shelf_days) VALUES (15, 'I15', 'เต้าหู้ไข่', 'ชิ้น', 10.0, 7);
+INSERT INTO ingredients (id, code, name, unit, min_stock, shelf_days) VALUES (16, 'I16', 'ถั่วฝักยาว', 'กรัม', 300.0, 5);
+INSERT INTO ingredients (id, code, name, unit, min_stock, shelf_days) VALUES (17, 'I17', 'ตำลึง', 'กรัม', 200.0, 3);
+INSERT INTO ingredients (id, code, name, unit, min_stock, shelf_days) VALUES (18, 'I18', 'น้ำปลา', 'กรัม', 300.0, 365);
+INSERT INTO ingredients (id, code, name, unit, min_stock, shelf_days) VALUES (19, 'I19', 'น้ำตาลทราย', 'กรัม', 300.0, 365);
+INSERT INTO ingredients (id, code, name, unit, min_stock, shelf_days) VALUES (20, 'I20', 'แตงกวา', 'กรัม', 300.0, 5);
+
+-- lots (19 rows)
+INSERT INTO lots (id, ingredient_id, received_date, use_by, qty_left, unit_cost, note) VALUES (1, 1, '2026-10-18', '2026-10-26', 2000.0, 0.03, 'ข้อมูลจำลอง');
+INSERT INTO lots (id, ingredient_id, received_date, use_by, qty_left, unit_cost, note) VALUES (2, 2, '2026-10-21', '2026-11-03', 20.0, 5.0, 'ข้อมูลจำลอง');
+INSERT INTO lots (id, ingredient_id, received_date, use_by, qty_left, unit_cost, note) VALUES (3, 3, '2026-10-14', '2026-11-13', 1000.0, 0.08, 'ข้อมูลจำลอง');
+INSERT INTO lots (id, ingredient_id, received_date, use_by, qty_left, unit_cost, note) VALUES (4, 4, '2026-10-04', '2027-03-23', 3000.0, 0.05, 'ข้อมูลจำลอง');
+INSERT INTO lots (id, ingredient_id, received_date, use_by, qty_left, unit_cost, note) VALUES (5, 5, '2026-10-04', '2027-03-23', 2000.0, 0.09, 'ข้อมูลจำลอง');
+INSERT INTO lots (id, ingredient_id, received_date, use_by, qty_left, unit_cost, note) VALUES (6, 6, '2026-10-23', '2026-10-25', 600.0, 0.03, 'ข้อมูลจำลอง');
+INSERT INTO lots (id, ingredient_id, received_date, use_by, qty_left, unit_cost, note) VALUES (7, 7, '2026-10-23', '2026-10-26', 1500.0, 0.14, 'ข้อมูลจำลอง');
+INSERT INTO lots (id, ingredient_id, received_date, use_by, qty_left, unit_cost, note) VALUES (8, 8, '2026-10-23', '2026-10-26', 400.0, 0.11, 'ข้อมูลจำลอง');
+INSERT INTO lots (id, ingredient_id, received_date, use_by, qty_left, unit_cost, note) VALUES (9, 9, '2026-10-09', '2027-03-23', 10000.0, 0.03, 'ข้อมูลจำลอง');
+INSERT INTO lots (id, ingredient_id, received_date, use_by, qty_left, unit_cost, note) VALUES (10, 10, '2026-10-23', '2026-10-26', 150.0, 0.06, 'ข้อมูลจำลอง');
+INSERT INTO lots (id, ingredient_id, received_date, use_by, qty_left, unit_cost, note) VALUES (11, 11, '2026-10-22', '2026-10-29', 200.0, 0.1, 'ข้อมูลจำลอง');
+INSERT INTO lots (id, ingredient_id, received_date, use_by, qty_left, unit_cost, note) VALUES (12, 12, '2026-10-22', '2026-10-26', 300.0, 0.04, 'ข้อมูลจำลอง');
+INSERT INTO lots (id, ingredient_id, received_date, use_by, qty_left, unit_cost, note) VALUES (13, 13, '2026-10-22', '2026-10-29', 800.0, 0.04, 'ข้อมูลจำลอง');
+INSERT INTO lots (id, ingredient_id, received_date, use_by, qty_left, unit_cost, note) VALUES (14, 14, '2026-10-19', '2026-11-08', 1000.0, 0.04, 'ข้อมูลจำลอง');
+INSERT INTO lots (id, ingredient_id, received_date, use_by, qty_left, unit_cost, note) VALUES (15, 15, '2026-10-22', '2026-10-29', 8.0, 10.0, 'ข้อมูลจำลอง');
+INSERT INTO lots (id, ingredient_id, received_date, use_by, qty_left, unit_cost, note) VALUES (16, 16, '2026-10-23', '2026-10-28', 500.0, 0.04, 'ข้อมูลจำลอง');
+INSERT INTO lots (id, ingredient_id, received_date, use_by, qty_left, unit_cost, note) VALUES (17, 18, '2026-09-24', '2027-08-20', 1500.0, 0.05, 'ข้อมูลจำลอง');
+INSERT INTO lots (id, ingredient_id, received_date, use_by, qty_left, unit_cost, note) VALUES (18, 19, '2026-09-24', '2027-08-20', 2000.0, 0.03, 'ข้อมูลจำลอง');
+INSERT INTO lots (id, ingredient_id, received_date, use_by, qty_left, unit_cost, note) VALUES (19, 20, '2026-10-23', '2026-10-28', 200.0, 0.03, 'ข้อมูลจำลอง');
+
+-- movements (19 rows)
+INSERT INTO movements (id, ingredient_id, lot_id, type, qty, unit_cost, created_at, ref, reason) VALUES (1, 1, 1, 'IN', 2000.0, 0.03, '2026-10-18 08:00:00', 'ยอดยกมา', 'ข้อมูลจำลอง');
+INSERT INTO movements (id, ingredient_id, lot_id, type, qty, unit_cost, created_at, ref, reason) VALUES (2, 2, 2, 'IN', 20.0, 5.0, '2026-10-21 08:00:00', 'ยอดยกมา', 'ข้อมูลจำลอง');
+INSERT INTO movements (id, ingredient_id, lot_id, type, qty, unit_cost, created_at, ref, reason) VALUES (3, 3, 3, 'IN', 1000.0, 0.08, '2026-10-14 08:00:00', 'ยอดยกมา', 'ข้อมูลจำลอง');
+INSERT INTO movements (id, ingredient_id, lot_id, type, qty, unit_cost, created_at, ref, reason) VALUES (4, 4, 4, 'IN', 3000.0, 0.05, '2026-10-04 08:00:00', 'ยอดยกมา', 'ข้อมูลจำลอง');
+INSERT INTO movements (id, ingredient_id, lot_id, type, qty, unit_cost, created_at, ref, reason) VALUES (5, 5, 5, 'IN', 2000.0, 0.09, '2026-10-04 08:00:00', 'ยอดยกมา', 'ข้อมูลจำลอง');
+INSERT INTO movements (id, ingredient_id, lot_id, type, qty, unit_cost, created_at, ref, reason) VALUES (6, 6, 6, 'IN', 600.0, 0.03, '2026-10-23 08:00:00', 'ยอดยกมา', 'ข้อมูลจำลอง');
+INSERT INTO movements (id, ingredient_id, lot_id, type, qty, unit_cost, created_at, ref, reason) VALUES (7, 7, 7, 'IN', 1500.0, 0.14, '2026-10-23 08:00:00', 'ยอดยกมา', 'ข้อมูลจำลอง');
+INSERT INTO movements (id, ingredient_id, lot_id, type, qty, unit_cost, created_at, ref, reason) VALUES (8, 8, 8, 'IN', 400.0, 0.11, '2026-10-23 08:00:00', 'ยอดยกมา', 'ข้อมูลจำลอง');
+INSERT INTO movements (id, ingredient_id, lot_id, type, qty, unit_cost, created_at, ref, reason) VALUES (9, 9, 9, 'IN', 10000.0, 0.03, '2026-10-09 08:00:00', 'ยอดยกมา', 'ข้อมูลจำลอง');
+INSERT INTO movements (id, ingredient_id, lot_id, type, qty, unit_cost, created_at, ref, reason) VALUES (10, 10, 10, 'IN', 150.0, 0.06, '2026-10-23 08:00:00', 'ยอดยกมา', 'ข้อมูลจำลอง');
+INSERT INTO movements (id, ingredient_id, lot_id, type, qty, unit_cost, created_at, ref, reason) VALUES (11, 11, 11, 'IN', 200.0, 0.1, '2026-10-22 08:00:00', 'ยอดยกมา', 'ข้อมูลจำลอง');
+INSERT INTO movements (id, ingredient_id, lot_id, type, qty, unit_cost, created_at, ref, reason) VALUES (12, 12, 12, 'IN', 300.0, 0.04, '2026-10-22 08:00:00', 'ยอดยกมา', 'ข้อมูลจำลอง');
+INSERT INTO movements (id, ingredient_id, lot_id, type, qty, unit_cost, created_at, ref, reason) VALUES (13, 13, 13, 'IN', 800.0, 0.04, '2026-10-22 08:00:00', 'ยอดยกมา', 'ข้อมูลจำลอง');
+INSERT INTO movements (id, ingredient_id, lot_id, type, qty, unit_cost, created_at, ref, reason) VALUES (14, 14, 14, 'IN', 1000.0, 0.04, '2026-10-19 08:00:00', 'ยอดยกมา', 'ข้อมูลจำลอง');
+INSERT INTO movements (id, ingredient_id, lot_id, type, qty, unit_cost, created_at, ref, reason) VALUES (15, 15, 15, 'IN', 8.0, 10.0, '2026-10-22 08:00:00', 'ยอดยกมา', 'ข้อมูลจำลอง');
+INSERT INTO movements (id, ingredient_id, lot_id, type, qty, unit_cost, created_at, ref, reason) VALUES (16, 16, 16, 'IN', 500.0, 0.04, '2026-10-23 08:00:00', 'ยอดยกมา', 'ข้อมูลจำลอง');
+INSERT INTO movements (id, ingredient_id, lot_id, type, qty, unit_cost, created_at, ref, reason) VALUES (17, 18, 17, 'IN', 1500.0, 0.05, '2026-09-24 08:00:00', 'ยอดยกมา', 'ข้อมูลจำลอง');
+INSERT INTO movements (id, ingredient_id, lot_id, type, qty, unit_cost, created_at, ref, reason) VALUES (18, 19, 18, 'IN', 2000.0, 0.03, '2026-09-24 08:00:00', 'ยอดยกมา', 'ข้อมูลจำลอง');
+INSERT INTO movements (id, ingredient_id, lot_id, type, qty, unit_cost, created_at, ref, reason) VALUES (19, 20, 19, 'IN', 200.0, 0.03, '2026-10-23 08:00:00', 'ยอดยกมา', 'ข้อมูลจำลอง');
+
+-- menus (10 rows)
+INSERT INTO menus (id, code, name) VALUES (1, 'M01', 'ฟักทองผัดไข่');
+INSERT INTO menus (id, code, name) VALUES (2, 'M02', 'ผัดผักบุ้งไฟแดง');
+INSERT INTO menus (id, code, name) VALUES (3, 'M03', 'ข้าวกะเพราหมูสับ');
+INSERT INTO menus (id, code, name) VALUES (4, 'M04', 'ไข่เจียวหมูสับ');
+INSERT INTO menus (id, code, name) VALUES (5, 'M05', 'ผัดคะน้าหมูสับ');
+INSERT INTO menus (id, code, name) VALUES (6, 'M06', 'ไก่ผัดมะเขือเทศ');
+INSERT INTO menus (id, code, name) VALUES (7, 'M07', 'แกงจืดเต้าหู้หมูสับ');
+INSERT INTO menus (id, code, name) VALUES (8, 'M08', 'ผัดถั่วฝักยาวหมูสับ');
+INSERT INTO menus (id, code, name) VALUES (9, 'M09', 'ไข่ผัดมะเขือเทศ');
+INSERT INTO menus (id, code, name) VALUES (10, 'M10', 'แกงจืดฟักทองหมูสับ');
+
+-- recipe_items (48 rows)
+INSERT INTO recipe_items (id, menu_id, ingredient_id, qty_per_dish) VALUES (1, 1, 1, 100.0);
+INSERT INTO recipe_items (id, menu_id, ingredient_id, qty_per_dish) VALUES (2, 1, 2, 1.0);
+INSERT INTO recipe_items (id, menu_id, ingredient_id, qty_per_dish) VALUES (3, 1, 3, 5.0);
+INSERT INTO recipe_items (id, menu_id, ingredient_id, qty_per_dish) VALUES (4, 1, 4, 10.0);
+INSERT INTO recipe_items (id, menu_id, ingredient_id, qty_per_dish) VALUES (5, 1, 5, 10.0);
+INSERT INTO recipe_items (id, menu_id, ingredient_id, qty_per_dish) VALUES (6, 2, 6, 150.0);
+INSERT INTO recipe_items (id, menu_id, ingredient_id, qty_per_dish) VALUES (7, 2, 3, 5.0);
+INSERT INTO recipe_items (id, menu_id, ingredient_id, qty_per_dish) VALUES (8, 2, 11, 3.0);
+INSERT INTO recipe_items (id, menu_id, ingredient_id, qty_per_dish) VALUES (9, 2, 4, 10.0);
+INSERT INTO recipe_items (id, menu_id, ingredient_id, qty_per_dish) VALUES (10, 2, 5, 15.0);
+INSERT INTO recipe_items (id, menu_id, ingredient_id, qty_per_dish) VALUES (11, 3, 7, 100.0);
+INSERT INTO recipe_items (id, menu_id, ingredient_id, qty_per_dish) VALUES (12, 3, 10, 10.0);
+INSERT INTO recipe_items (id, menu_id, ingredient_id, qty_per_dish) VALUES (13, 3, 11, 5.0);
+INSERT INTO recipe_items (id, menu_id, ingredient_id, qty_per_dish) VALUES (14, 3, 3, 5.0);
+INSERT INTO recipe_items (id, menu_id, ingredient_id, qty_per_dish) VALUES (15, 3, 9, 120.0);
+INSERT INTO recipe_items (id, menu_id, ingredient_id, qty_per_dish) VALUES (16, 3, 4, 10.0);
+INSERT INTO recipe_items (id, menu_id, ingredient_id, qty_per_dish) VALUES (17, 3, 18, 10.0);
+INSERT INTO recipe_items (id, menu_id, ingredient_id, qty_per_dish) VALUES (18, 4, 2, 2.0);
+INSERT INTO recipe_items (id, menu_id, ingredient_id, qty_per_dish) VALUES (19, 4, 7, 40.0);
+INSERT INTO recipe_items (id, menu_id, ingredient_id, qty_per_dish) VALUES (20, 4, 4, 30.0);
+INSERT INTO recipe_items (id, menu_id, ingredient_id, qty_per_dish) VALUES (21, 4, 18, 5.0);
+INSERT INTO recipe_items (id, menu_id, ingredient_id, qty_per_dish) VALUES (22, 5, 12, 150.0);
+INSERT INTO recipe_items (id, menu_id, ingredient_id, qty_per_dish) VALUES (23, 5, 7, 60.0);
+INSERT INTO recipe_items (id, menu_id, ingredient_id, qty_per_dish) VALUES (24, 5, 3, 5.0);
+INSERT INTO recipe_items (id, menu_id, ingredient_id, qty_per_dish) VALUES (25, 5, 5, 15.0);
+INSERT INTO recipe_items (id, menu_id, ingredient_id, qty_per_dish) VALUES (26, 5, 4, 10.0);
+INSERT INTO recipe_items (id, menu_id, ingredient_id, qty_per_dish) VALUES (27, 6, 8, 100.0);
+INSERT INTO recipe_items (id, menu_id, ingredient_id, qty_per_dish) VALUES (28, 6, 13, 80.0);
+INSERT INTO recipe_items (id, menu_id, ingredient_id, qty_per_dish) VALUES (29, 6, 14, 40.0);
+INSERT INTO recipe_items (id, menu_id, ingredient_id, qty_per_dish) VALUES (30, 6, 4, 10.0);
+INSERT INTO recipe_items (id, menu_id, ingredient_id, qty_per_dish) VALUES (31, 6, 19, 5.0);
+INSERT INTO recipe_items (id, menu_id, ingredient_id, qty_per_dish) VALUES (32, 7, 15, 1.0);
+INSERT INTO recipe_items (id, menu_id, ingredient_id, qty_per_dish) VALUES (33, 7, 7, 50.0);
+INSERT INTO recipe_items (id, menu_id, ingredient_id, qty_per_dish) VALUES (34, 7, 17, 30.0);
+INSERT INTO recipe_items (id, menu_id, ingredient_id, qty_per_dish) VALUES (35, 7, 18, 10.0);
+INSERT INTO recipe_items (id, menu_id, ingredient_id, qty_per_dish) VALUES (36, 8, 16, 120.0);
+INSERT INTO recipe_items (id, menu_id, ingredient_id, qty_per_dish) VALUES (37, 8, 7, 50.0);
+INSERT INTO recipe_items (id, menu_id, ingredient_id, qty_per_dish) VALUES (38, 8, 3, 5.0);
+INSERT INTO recipe_items (id, menu_id, ingredient_id, qty_per_dish) VALUES (39, 8, 18, 10.0);
+INSERT INTO recipe_items (id, menu_id, ingredient_id, qty_per_dish) VALUES (40, 8, 4, 10.0);
+INSERT INTO recipe_items (id, menu_id, ingredient_id, qty_per_dish) VALUES (41, 9, 2, 2.0);
+INSERT INTO recipe_items (id, menu_id, ingredient_id, qty_per_dish) VALUES (42, 9, 13, 100.0);
+INSERT INTO recipe_items (id, menu_id, ingredient_id, qty_per_dish) VALUES (43, 9, 14, 30.0);
+INSERT INTO recipe_items (id, menu_id, ingredient_id, qty_per_dish) VALUES (44, 9, 4, 10.0);
+INSERT INTO recipe_items (id, menu_id, ingredient_id, qty_per_dish) VALUES (45, 9, 19, 5.0);
+INSERT INTO recipe_items (id, menu_id, ingredient_id, qty_per_dish) VALUES (46, 10, 1, 120.0);
+INSERT INTO recipe_items (id, menu_id, ingredient_id, qty_per_dish) VALUES (47, 10, 7, 50.0);
+INSERT INTO recipe_items (id, menu_id, ingredient_id, qty_per_dish) VALUES (48, 10, 18, 10.0);
+
+-- farmers (5 rows)
+INSERT INTO farmers (id, name, area, contact) VALUES (1, 'กลุ่มเกษตรกรบ้านหนองบัว (จำลอง)', 'ต.หนองบัว', '081-000-0001');
+INSERT INTO farmers (id, name, area, contact) VALUES (2, 'ฟาร์มไข่ลุงชัย (จำลอง)', 'ต.ท่าช้าง', '081-000-0002');
+INSERT INTO farmers (id, name, area, contact) VALUES (3, 'สวนผักป้าแดง (จำลอง)', 'ต.บ้านใหม่', '081-000-0003');
+INSERT INTO farmers (id, name, area, contact) VALUES (4, 'วิสาหกิจชุมชนผักปลอดภัย (จำลอง)', 'ต.โนนสูง', '081-000-0004');
+INSERT INTO farmers (id, name, area, contact) VALUES (5, 'ฟาร์มหมูพี่เอก (จำลอง)', 'ต.หนองบัว', '081-000-0005');
+
+-- produce (12 rows)
+INSERT INTO produce (id, farmer_id, ingredient_id, price, sell_unit, qty_available, ready_date, updated_at) VALUES (1, 1, 1, 30.0, 'กก.', 50.0, '2026-10-24', '2026-10-24 17:45:17');
+INSERT INTO produce (id, farmer_id, ingredient_id, price, sell_unit, qty_available, ready_date, updated_at) VALUES (2, 3, 1, 35.0, 'กก.', 20.0, '2026-10-25', '2026-10-24 17:45:17');
+INSERT INTO produce (id, farmer_id, ingredient_id, price, sell_unit, qty_available, ready_date, updated_at) VALUES (3, 2, 2, 5.0, 'ฟอง', 300.0, '2026-10-24', '2026-10-24 17:45:17');
+INSERT INTO produce (id, farmer_id, ingredient_id, price, sell_unit, qty_available, ready_date, updated_at) VALUES (4, 4, 2, 5.5, 'ฟอง', 200.0, '2026-10-24', '2026-10-24 17:45:17');
+INSERT INTO produce (id, farmer_id, ingredient_id, price, sell_unit, qty_available, ready_date, updated_at) VALUES (5, 3, 6, 30.0, 'กก.', 15.0, '2026-10-24', '2026-10-24 17:45:17');
+INSERT INTO produce (id, farmer_id, ingredient_id, price, sell_unit, qty_available, ready_date, updated_at) VALUES (6, 3, 12, 40.0, 'กก.', 10.0, '2026-10-24', '2026-10-24 17:45:17');
+INSERT INTO produce (id, farmer_id, ingredient_id, price, sell_unit, qty_available, ready_date, updated_at) VALUES (7, 4, 16, 40.0, 'กก.', 10.0, '2026-10-25', '2026-10-24 17:45:17');
+INSERT INTO produce (id, farmer_id, ingredient_id, price, sell_unit, qty_available, ready_date, updated_at) VALUES (8, 4, 17, 50.0, 'กก.', 5.0, '2026-10-24', '2026-10-24 17:45:17');
+INSERT INTO produce (id, farmer_id, ingredient_id, price, sell_unit, qty_available, ready_date, updated_at) VALUES (9, 4, 13, 40.0, 'กก.', 15.0, '2026-10-24', '2026-10-24 17:45:17');
+INSERT INTO produce (id, farmer_id, ingredient_id, price, sell_unit, qty_available, ready_date, updated_at) VALUES (10, 1, 20, 25.0, 'กก.', 20.0, '2026-10-24', '2026-10-24 17:45:17');
+INSERT INTO produce (id, farmer_id, ingredient_id, price, sell_unit, qty_available, ready_date, updated_at) VALUES (11, 5, 7, 140.0, 'กก.', 30.0, '2026-10-24', '2026-10-24 17:45:17');
+INSERT INTO produce (id, farmer_id, ingredient_id, price, sell_unit, qty_available, ready_date, updated_at) VALUES (12, 1, 10, 60.0, 'กก.', 3.0, '2026-10-24', '2026-10-24 17:45:17');
+
+-- menu_plans (0 rows)
+
+-- plan_items (0 rows)
+
+-- purchase_orders (3 rows)
+INSERT INTO purchase_orders (id, farmer_id, plan_id, created_at, status, received_at) VALUES (1, 2, NULL, '2026-10-17 09:00:00', 'RECEIVED', '2026-10-17 15:00:00');
+INSERT INTO purchase_orders (id, farmer_id, plan_id, created_at, status, received_at) VALUES (2, 3, NULL, '2026-10-19 09:00:00', 'RECEIVED', '2026-10-19 15:00:00');
+INSERT INTO purchase_orders (id, farmer_id, plan_id, created_at, status, received_at) VALUES (3, 5, NULL, '2026-10-21 09:00:00', 'RECEIVED', '2026-10-21 15:00:00');
+
+-- po_items (3 rows)
+INSERT INTO po_items (id, po_id, ingredient_id, qty, unit_price) VALUES (1, 1, 2, 60.0, 5.0);
+INSERT INTO po_items (id, po_id, ingredient_id, qty, unit_price) VALUES (2, 2, 6, 2000.0, 0.03);
+INSERT INTO po_items (id, po_id, ingredient_id, qty, unit_price) VALUES (3, 3, 7, 3000.0, 0.14);
+
